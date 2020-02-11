@@ -13,7 +13,7 @@ namespace WebApi.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Usu_Api = table.Column<string>(nullable: false),
+                    User_Api = table.Column<string>(nullable: false),
                     Pass_Api = table.Column<string>(nullable: false),
                     Lvl_Access = table.Column<bool>(nullable: false)
                 },

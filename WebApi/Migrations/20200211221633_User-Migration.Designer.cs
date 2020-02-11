@@ -9,7 +9,7 @@ using WebApi.Context;
 namespace WebApi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200211212311_User-Migration")]
+    [Migration("20200211221633_User-Migration")]
     partial class UserMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,7 +31,7 @@ namespace WebApi.Migrations
                     b.Property<string>("Pass_Api")
                         .IsRequired();
 
-                    b.Property<string>("Usu_Api")
+                    b.Property<string>("User_Api")
                         .IsRequired();
 
                     b.HasKey("Id");

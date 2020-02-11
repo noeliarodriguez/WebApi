@@ -29,7 +29,7 @@ namespace WebApi.Migrations
                     b.Property<string>("Pass_Api")
                         .IsRequired();
 
-                    b.Property<string>("Usu_Api")
+                    b.Property<string>("User_Api")
                         .IsRequired();
 
                     b.HasKey("Id");

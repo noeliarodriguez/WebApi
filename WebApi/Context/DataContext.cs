@@ -15,7 +15,7 @@ namespace WebApi.Context
 
         public DataContext(DbContextOptions<DataContext> options): base(options)
         {
-           // Database.SetCommandTimeout((int)TimeSpan.FromMinutes(1).TotalSeconds);
+            Database.SetCommandTimeout((int)TimeSpan.FromMinutes(1).TotalSeconds);
         }
 
         public DbSet<User> Users_Api { get; set; }
